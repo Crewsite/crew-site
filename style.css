@@ -1,0 +1,91 @@
+/* Stessa palette dell'app: chi arriva qui dall'App Store deve riconoscere
+   subito lo stesso prodotto. */
+:root {
+  --bg: #101216;
+  --surface: #1a1d22;
+  --border: #2b3037;
+  --text: #f4f6f8;
+  --muted: #9aa2ab;
+  --dim: #6f767e;
+  --lime: #d3ff4f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+header { margin-bottom: 40px; }
+
+.brand {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: var(--text);
+}
+.brand span { color: var(--lime); }
+
+nav { margin-top: 18px; display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+nav a:hover, nav a[aria-current="page"] { color: var(--lime); }
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 36px 0 10px;
+  letter-spacing: -0.02em;
+}
+
+p, li { color: var(--muted); }
+li { margin-bottom: 6px; }
+strong { color: var(--text); }
+
+.updated {
+  font-size: 14px;
+  color: var(--dim);
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+a { color: var(--lime); }
+
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--text); font-weight: 600; }
+td { color: var(--muted); }
+
+footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--dim);
+  font-size: 14px;
+}
