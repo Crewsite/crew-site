@@ -29,12 +29,24 @@ body {
 
 header { margin-bottom: 40px; }
 
+/* Il marchio: prima l'icona, poi il nome. Google confronta il logo della
+   schermata di consenso con quello del sito per capire che sono la stessa
+   applicazione, e senza icona qui non ha niente da confrontare. */
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-size: 26px;
   font-weight: 800;
   letter-spacing: -0.03em;
   text-decoration: none;
   color: var(--text);
+}
+.brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: block;
 }
 .brand span { color: var(--lime); }
 
