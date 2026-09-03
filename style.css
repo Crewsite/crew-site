@@ -43,12 +43,35 @@ header { margin-bottom: 40px; }
   color: var(--text);
 }
 .brand img {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
   display: block;
 }
-.brand span { color: var(--lime); }
+/* Il nome sta tutto in un elemento solo: se il punto e' un figlio diretto
+   del flex, il `gap` glielo stacca dalla parola e diventa "Crew ·". */
+.brand i { color: var(--lime); font-style: normal; }
+
+/* L'icona vera dell'applicazione, alla fine della pagina. Chi verifica
+   confronta il logo della schermata di consenso con quello del sito: qui
+   ce l'ha davanti, identico, a una misura in cui si legge. */
+.app {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 48px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+}
+.app img { width: 76px; height: 76px; border-radius: 18px; display: block; }
+.app strong {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.app em { color: var(--lime); font-style: normal; }
+.app span { color: var(--muted); font-size: 14px; }
 
 nav { margin-top: 18px; display: flex; gap: 18px; flex-wrap: wrap; }
 nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
