@@ -25,7 +25,7 @@
 <div class="testo">
 
 <h1>Informativa sulla privacy</h1>
-<p class="updated">Ultimo aggiornamento: 1 settembre 2026</p>
+<p class="updated">Ultimo aggiornamento: 4 settembre 2026</p>
 
 <p>Crew. mette in contatto professionisti e canali YouTube in Europa. Questa
 informativa spiega quali dati raccogliamo, perché, e cosa puoi farci.</p>
@@ -120,6 +120,72 @@ parti</a>. Cancellando l'account Crew. spariscono con tutto il resto.</p>
 <p>L'uso che facciamo dei dati ricevuti dalle API di Google rispetta la
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
 API Services User Data Policy</a>, comprese le Limited Use requirements.</p>
+
+<h2>Con chi condividiamo i dati ricevuti da Google</h2>
+<p><em>With whom we share, transfer or disclose Google user data.</em></p>
+
+<p><strong>Non li cediamo, non li vendiamo e non li trasferiamo a nessun
+terzo</strong> per finalità proprie di quel terzo. Non li usiamo per
+pubblicità, non li usiamo per profilazione e non li usiamo per addestrare
+modelli di intelligenza artificiale, né nostri né altrui.</p>
+
+<p>L'unico soggetto che li tratta oltre a noi è il nostro fornitore di
+infrastruttura, che agisce come <strong>responsabile del trattamento</strong>
+su nostra istruzione e non può usarli per scopi propri:</p>
+
+<div class="tabella">
+<table>
+  <tr><th>Chi</th><th>Cosa tratta</th><th>Dove</th><th>Ruolo</th></tr>
+  <tr>
+    <td><strong>Supabase</strong></td>
+    <td>Ospita il database e l'archiviazione dei file, quindi anche il nome
+        del canale, la descrizione, l'identificativo, l'immagine e i tre
+        numeri pubblici salvati sul profilo</td>
+    <td>Unione Europea</td>
+    <td>Responsabile del trattamento</td>
+  </tr>
+</table>
+</div>
+
+<p>Nient'altro. In particolare, i dati del canale YouTube <strong>non</strong>
+vengono inviati ad Apple, a servizi di analisi, a reti pubblicitarie o a
+qualunque altro fornitore.</p>
+
+<p>Gli altri utenti registrati vedono i dati del canale <strong>solo</strong>
+quando apri tu stesso quel canale sul tuo profilo pubblico: è la funzione per
+cui il permesso viene chiesto, cioè dimostrare che il canale è tuo. Se
+scolleghi il canale, smettono di vederli.</p>
+
+<p>Potremmo essere obbligati a comunicare dati a un'autorità solo in
+esecuzione di un ordine legittimo. Non è mai successo, e se dovesse succedere
+te lo comunicheremmo, salvo che la legge lo vieti.</p>
+
+<h2>Come proteggiamo i dati</h2>
+<p><em>Data protection mechanisms for sensitive data.</em></p>
+
+<ul>
+  <li><strong>In transito.</strong> Ogni comunicazione fra l'app e i nostri
+      server viaggia su <strong>TLS 1.2 o superiore</strong>. Non esiste un
+      canale in chiaro.</li>
+  <li><strong>A riposo.</strong> Database e archivio file sono
+      <strong>cifrati a riposo</strong> (AES-256) dal fornitore
+      dell'infrastruttura.</li>
+  <li><strong>Chi può leggere cosa.</strong> Il database applica
+      <strong>Row Level Security</strong>: le regole di accesso valgono riga
+      per riga e sono applicate dal database stesso, non dall'app. Una
+      richiesta che non ha diritto a una riga non la riceve, nemmeno
+      interrogando direttamente l'API.</li>
+  <li><strong>Il token di Google.</strong> Il token di accesso
+      <strong>non viene mai scritto su disco né sul server</strong>: vive in
+      memoria per la durata della sessione e viene scartato. Non conserviamo
+      refresh token.</li>
+  <li><strong>Accesso interno.</strong> All'infrastruttura accede il solo
+      titolare. Non esiste un pannello di assistenza che mostri i dati di un
+      utente, perché non esiste personale di assistenza: la superficie da cui
+      quei dati si possono leggere è una sola.</li>
+  <li><strong>Cancellazione.</strong> Dall'app, in un tocco, i dati vengono
+      eliminati dai nostri server, non solo dal telefono.</li>
+</ul>
 
 <h2>Verifica della partita IVA</h2>
 <p>Se scegli di verificare la partita IVA, il numero viene inviato a
